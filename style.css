@@ -1,3 +1,5 @@
+/* /* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deac', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 /* variables */
@@ -27,6 +29,176 @@ html {
 }
 
 body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deac', sans-serif; 
+    background-color: var(--Very-lightgray-background-headings-buttons);
+}
+
+.bright-orange {
+    background-color: var(--Bright-orange);
+}
+
+.dark-cyan {
+    background-color: var(--Dark-cyan);
+}
+
+.very-dark-cyan {
+    background-color: var(--Very-dark-cyan);
+}
+
+.hero {
+    padding: 88px 24px 88px 24px;
+    
+}
+
+.sedans {
+    padding: 48px 50px 48px 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.suvs {
+    padding: 48px 50px 48px 50px;
+}
+
+.luxury {
+    padding: 48px 50px 48px 50px;
+    border-radius: 0 0 10px 10px;
+}
+
+.hero img {
+    margin-bottom: 38px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 38px;
+    color: var(--Very-lightgray-background-headings-buttons);
+    text-transform: uppercase;
+}
+
+p {
+    width: 222px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.sedans > .btn {
+    height: 48px;
+    width: 146px;
+    font-size: 15px;
+    font-weight: 700;
+
+    border-radius: 24px;
+    color: var(--Bright-orange);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: var(--Very-lightgray-background-headings-buttons);
+    text-align: center;
+    cursor: pointer;
+}
+
+.suvs > .btn {
+    height: 48px;
+    width: 146px;
+    font-size: 15px;
+    font-weight: 700;
+
+    border-radius: 24px;
+    color: var(--Dark-cyan);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: var(--Very-lightgray-background-headings-buttons);
+    text-align: center;
+    cursor: pointer;
+}
+
+.luxury > .btn {
+    height: 48px;
+    width: 146px;
+    font-size: 15px;
+    font-weight: 700;
+
+    border-radius: 24px;
+    color: var(--Very-dark-cyan);
+    border: 1px solid hsl(0, 0%, 95%);
+    background-color: var(--Very-lightgray-background-headings-buttons);
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--Very-lightgray-background-headings-buttons);
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    transition: background-color 500ms ease-in-out;
+}
+
+
+hr {
+    display: none;
+}
+
+.attribution {
+    text-align: center;
+}
+
+/* responsive design */
+
+@media (min-width: 992px) {
+
+    body {
+        min-width: 1440px;
+        min-height: 100vh;
+
+        position: relative;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        position: fixed;
+    }
+
+    .bright-orange {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .very-dark-cyan {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .sedans, 
+    .suvs, 
+    .luxury {
+        width: 307px;
+        height: 500px;
+        padding: 48px;
+        padding: 47px;
+    }
+ 
+    p {
+        width: 191px;
+        height: 114px;
+        margin-bottom: 84px;
+    } 
+
+  .attribution {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* body {
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deac', sans-serif;
 
@@ -127,18 +299,25 @@ main {
 }
 
 .btn {
-    width: 146px;
-    height: 48px;
+    padding: 18px 32px 18px 32px;
     border-radius: 24px;
     background-color: var(--Very-lightgray-background-headings-buttons);
     text-align: center;
-
+    text-decoration: none;
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 48px;
 }
 
+.btn:hover {
+    color: var(--Very-lightgray-background-headings-buttons);
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: background-color 500ms ease-in-out;
+}
+
 h1 {
+    font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     font-size: 32px;
     color: var(--Very-lightgray-background-headings-buttons);
@@ -156,10 +335,98 @@ hr {
     display: none;
 }
 
-.attribution {
-    color: var(--White-main-heading-stats);
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translateX(-50%);
+
+
+/* responsive designs below here */
+
+/*@media only screen and (max-width: 768px) {
+      
 }
+
+@media only screen and (max-width: 425px) {
+    *,
+    * ::before,
+    * ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        min-width: 375px;
+        min-height: 1502px;
+
+        position: relative;
+        border: solid purple;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vw;
+    
+        border: solid red;
+    }
+
+    .hero {
+        width: 100vw;
+        height: 1326px;
+
+        display: flex;
+        flex-direction: column;
+
+        border: solid blue;
+        border-radius: 10px;
+        padding: 88px 24px 88px 24px;
+    }
+
+    .hero img {
+        margin-bottom: 42px;
+    }
+
+    .sedans {
+        width: 100%;
+        
+        padding: 48px;
+
+        background-color: var(--Bright-orange);
+        border: solid orange;
+    }
+
+    .sedans p {
+        width: 222px;
+        height: 112px;
+        font-size: 15px;
+
+        padding: 40px 0 28px 0;
+    }
+
+    .suvs {
+        width: 100%;
+        
+        padding: 48px;
+
+    }
+
+    .suvs p {
+        width: 222px;
+        height: 112px;
+        font-size: 15px;
+
+        padding: 40px 0 28px 0;
+    }
+
+    .luxury {
+        width: 100%;
+        
+        padding: 48px;
+    }
+
+    .luxury p {
+        width: 222px;
+        height: 112px;
+        font-size: 15px;
+
+        padding: 40px 0 28px 0;
+    }
+
+} */
