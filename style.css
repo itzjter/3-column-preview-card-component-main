@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* variables */
+
+:root {
+    /* primary color */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* neutral color */
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-lightgray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+
+*,
+* ::before,
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deac', sans-serif;
+
+    min-width: 1440px;
+    min-height: 100vh;
+
+    border: solid purple;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+
+    border: solid red;
+}
+
+.hero {
+    width: 921px;
+    height: 500px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: solid blue;
+    border-radius: 10px;
+}
+
+.hero img {
+    margin-bottom: 42px;
+}
+
+.sedans {
+    width: 307px;
+    height: 500px;
+    padding: 48px;
+
+    background-color: var(--Bright-orange);
+    border: solid orange;
+}
+
+.sedans p {
+    width: 191px;
+    height: 114px;
+
+    margin: 41px 0 87px 0;
+}
+
+.sedans > .btn {
+    color: var(--Bright-orange);
+}
+
+.suvs {
+    width: 307px;
+    height: 500px;
+    padding: 48px;
+
+    background-color: var(--Dark-cyan);
+    border: solid cyan;
+}
+
+.suvs p {
+    width: 207px;
+    height: 112px;
+
+    margin: 41px 0 89px 0;
+}
+
+.suvs > .btn {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    width: 307px;
+    height: 500px;
+    padding: 48px;
+
+    background-color: var(--Very-dark-cyan);
+    border: solid green;
+}
+
+.luxury p {
+    width: 207px;
+    height: 115px;
+
+    margin: 41px 0 86px 0;
+}
+
+.luxury > .btn {
+    color: var(--Very-dark-cyan);
+}
+
+.btn {
+    width: 146px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--Very-lightgray-background-headings-buttons);
+    text-align: center;
+
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--Very-lightgray-background-headings-buttons);
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Transparent-white-paragraphs);
+    line-height: 1.6;
+}
+
+hr {
+    display: none;
+}
+
+.attribution {
+    color: var(--White-main-heading-stats);
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
